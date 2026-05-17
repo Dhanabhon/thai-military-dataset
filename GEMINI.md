@@ -16,7 +16,7 @@ This project is an open-source dataset containing the ranks of the Thai military
   - `json/`: For web/mobile applications and APIs.
   - `sql/`: SQL scripts for database integration (MySQL, PostgreSQL, SQLite).
 - `examples/`: (Planned) Examples of how to use the data in various programming languages.
-- `scripts/`: (Planned) Scripts for data processing, validation, or format conversion.
+- `scripts/`: Scripts for data processing, validation, or format conversion.
 
 ## Data Schema
 
@@ -60,4 +60,4 @@ The data follows a standardized schema:
 - [x] Populate `data/csv/` with Thai military rank data.
 - [ ] Populate `data/sql/` with database creation and insertion scripts.
 - [ ] Add usage examples in the `examples/` directory.
-- [ ] Add utility scripts in the `scripts/` directory.
+- [x] Add utility scripts in the `scripts/` directory.
