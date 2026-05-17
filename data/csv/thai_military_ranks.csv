@@ -31,3 +31,19 @@ RTN-N-04,กองทัพเรือ,Royal Thai Navy,ชั้นประท
 RTN-N-05,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,จ่าโท,Petty Officer 2nd Class,จ.ท.,PO2
 RTN-N-06,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,จ่าตรี,Petty Officer 3rd Class,จ.ต.,PO3
 RTN-N-07,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,พลทหาร,Seaman,พลฯ,SEA
+RTAF-O-01,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,พลอากาศเอก,Air Chief Marshal,พล.อ.อ.,ACM
+RTAF-O-02,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,พลอากาศโท,Air Marshal,พล.อ.ท.,AM
+RTAF-O-03,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,พลอากาศตรี,Air Vice Marshal,พล.อ.ต.,AVM
+RTAF-O-04,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,นาวาอากาศเอก,Group Captain,น.อ.,GP CAPT
+RTAF-O-05,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,นาวาอากาศโท,Wing Commander,น.ท.,WG CDR
+RTAF-O-06,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,นาวาอากาศตรี,Squadron Leader,น.ต.,SQN LDR
+RTAF-O-07,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,เรืออากาศเอก,Flight Lieutenant,ร.อ.,FLT LT
+RTAF-O-08,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,เรืออากาศโท,Flying Officer,ร.ท.,FLG OFF
+RTAF-O-09,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,เรืออากาศตรี,Pilot Officer,ร.ต.,PLT OFF
+RTAF-N-01,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,พันจ่าอากาศเอก,Flight Sergeant 1st Class,พ.จ.อ.,FS1
+RTAF-N-02,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,พันจ่าอากาศโท,Flight Sergeant 2nd Class,พ.จ.ท.,FS2
+RTAF-N-03,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,พันจ่าอากาศตรี,Flight Sergeant 3rd Class,พ.จ.ต.,FS3
+RTAF-N-04,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,จ่าอากาศเอก,Sergeant,จ.อ.,SGT
+RTAF-N-05,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,จ่าอากาศโท,Corporal,จ.ท.,CPL
+RTAF-N-06,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,จ่าอากาศตรี,Leading Aircraftman,จ.ต.,LAC
+RTAF-N-07,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,พลทหาร,Airman,พลฯ,AIR
