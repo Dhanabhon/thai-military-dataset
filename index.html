@@ -23,10 +23,7 @@
             <p class="text-lg text-slate-500 mb-10">Explore the comprehensive dataset of Thai military personnel structure.</p>
             
             <div id="search-container" class="relative text-left max-w-lg mx-auto">
-                <!-- Search bar and results will go here -->
-                <div class="placeholder bg-white p-4 border border-slate-200 rounded-xl shadow-sm text-slate-400 text-center animate-pulse">
-                    Initializing dataset...
-                </div>
+                <!-- Search UI Shell -->
             </div>
         </main>
 
@@ -36,7 +33,41 @@
     </div>
     
     <script>
-        console.log('Demo app initialized');
+        const container = document.getElementById('search-container');
+        container.innerHTML = `
+            <div class="relative group">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+                <input type="text" id="search-input" disabled placeholder="Loading dataset..." class="block w-full pl-11 pr-4 py-3 border border-slate-200 rounded-xl leading-5 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm shadow-sm transition-all disabled:opacity-50">
+            </div>
+            <div id="results-dropdown" class="hidden absolute z-10 mt-2 w-full bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden max-h-96 overflow-y-auto">
+                <!-- Results will be injected here -->
+            </div>
+        `;
+
+        let ranks = [];
+        let corps = [];
+
+        async function init() {
+            const input = document.getElementById('search-input');
+            try {
+                const [ranksRes, corpsRes] = await Promise.all([
+                    fetch('data/json/thai_military_ranks.json'),
+                    fetch('data/json/thai_military_corps.json')
+                ]);
+                ranks = await ranksRes.json();
+                corps = await corpsRes.json();
+                
+                input.disabled = false;
+                input.placeholder = "Search by rank name or abbreviation...";
+                console.log('Data loaded:', { ranks: ranks.length, corps: corps.length });
+            } catch (err) {
+                input.placeholder = "Failed to load dataset.";
+                console.error('Failed to load data:', err);
+            }
+        }
+        init();
     </script>
 </body>
 </html>
