@@ -68,6 +68,68 @@
             }
         }
         init();
+
+        const input = document.getElementById('search-input');
+        const dropdown = document.getElementById('results-dropdown');
+
+        function renderResults(results) {
+            if (results.length === 0) {
+                dropdown.innerHTML = '<div class="px-4 py-3 text-sm text-slate-500 text-center">No results found</div>';
+            } else {
+                dropdown.innerHTML = results.map(item => {
+                    const isRank = 'rank_en' in item;
+                    const name_en = isRank ? item.rank_en : item.corps_en;
+                    const name_th = isRank ? item.rank_th : item.corps_th;
+                    const abbr = isRank ? (item.abbr_en || '') : '';
+                    const branch = item.branch_en.replace('Royal Thai ', '');
+                    
+                    return `
+                        <div class="px-4 py-3 hover:bg-blue-50/50 cursor-pointer border-b border-slate-50 last:border-0 flex justify-between items-center group/item transition-colors">
+                            <div class="min-w-0">
+                                <div class="text-sm font-semibold text-slate-900 group-hover/item:text-blue-700 transition-colors truncate">
+                                    ${name_en} <span class="text-slate-400 font-normal ml-1">(${name_th})</span>
+                                </div>
+                                <div class="text-[10px] text-slate-400 uppercase tracking-wider flex items-center gap-1.5 mt-0.5">
+                                    <span class="${isRank ? 'text-blue-500' : 'text-emerald-500'} font-bold">${isRank ? 'Rank' : 'Corps'}</span>
+                                    ${abbr ? '<span>•</span> ' + abbr : ''}
+                                </div>
+                            </div>
+                            <span class="flex-shrink-0 text-[10px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-500 uppercase tracking-tight ml-4">${branch}</span>
+                        </div>
+                    `;
+                }).join('');
+            }
+            dropdown.classList.remove('hidden');
+        }
+
+        input.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            if (!query) {
+                dropdown.classList.add('hidden');
+                return;
+            }
+
+            const filteredRanks = ranks.filter(r => 
+                r.rank_en.toLowerCase().includes(query) || 
+                r.rank_th.includes(query) || 
+                (r.abbr_en && r.abbr_en.toLowerCase().includes(query)) ||
+                (r.abbr_th && r.abbr_th.includes(query))
+            );
+
+            const filteredCorps = corps.filter(c => 
+                c.corps_en.toLowerCase().includes(query) || 
+                c.corps_th.includes(query)
+            );
+
+            renderResults([...filteredRanks, ...filteredCorps].slice(0, 10));
+        });
+
+        // Hide dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!input.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
     </script>
 </body>
 </html>
