@@ -92,6 +92,22 @@ def validate_json(file_path, required_fields, expected_count, is_grouped=False):
         print(f"ERROR: An unexpected error occurred while validating {file_path}: {e}")
         return False
 
+def validate_sql_file(file_path):
+    print(f"Validating {file_path}...")
+    if not os.path.exists(file_path):
+        print(f"ERROR: File {file_path} not found.")
+        return False
+    
+    # Basic check for CREATE and INSERT keywords
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+        if "CREATE TABLE" not in content or "INSERT INTO" not in content:
+            print(f"ERROR: {file_path} is missing basic SQL commands.")
+            return False
+            
+    print(f"Success! {file_path} validated.")
+    return True
+
 if __name__ == "__main__":
     csv_datasets = [
         {
@@ -138,6 +154,11 @@ if __name__ == "__main__":
             
     for ds in json_datasets:
         if not validate_json(ds["path"], ds["fields"], ds["count"], ds["grouped"]):
+            all_valid = False
+
+    sql_engines = ["mysql", "postgres", "sqlite"]
+    for engine in sql_engines:
+        if not validate_sql_file(f"data/sql/{engine}.sql"):
             all_valid = False
             
     if all_valid:
