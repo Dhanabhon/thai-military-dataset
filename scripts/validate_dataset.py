@@ -124,13 +124,13 @@ if __name__ == "__main__":
         {
             "path": "data/json/thai_military_ranks.json",
             "fields": ['id', 'branch_th', 'branch_en', 'type_th', 'type_en', 'rank_th', 'rank_en', 'abbr_th', 'abbr_en'],
-            "count": 72,
+            "count": 69,
             "grouped": False
         },
         {
             "path": "data/json/thai_military_ranks_grouped.json",
             "fields": ['id', 'branch_th', 'branch_en', 'type_th', 'type_en', 'rank_th', 'rank_en', 'abbr_th', 'abbr_en'],
-            "count": 72,
+            "count": 69,
             "grouped": True
         },
         {

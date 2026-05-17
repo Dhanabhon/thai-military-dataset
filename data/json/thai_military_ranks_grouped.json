@@ -252,17 +252,6 @@
       "rank_en": "Senior Colonel",
       "abbr_th": "พ.อ. (พิเศษ)",
       "abbr_en": "SR COL"
-    },
-    {
-      "id": "RTA-AO-04-S",
-      "branch_th": "กองทัพบก",
-      "branch_en": "Royal Thai Army",
-      "type_th": "ชั้นสัญญาบัตร",
-      "type_en": "Commissioned Officer",
-      "rank_th": "ว่าที่พันเอก (พิเศษ)",
-      "rank_en": "Acting Senior Colonel",
-      "abbr_th": "ว่าที่ พ.อ. (พิเศษ)",
-      "abbr_en": "ACT SR COL"
     }
   ],
   "Royal Thai Navy": [
@@ -518,17 +507,6 @@
       "rank_en": "Senior Captain",
       "abbr_th": "น.อ. (พิเศษ)",
       "abbr_en": "SR CAPT"
-    },
-    {
-      "id": "RTN-AO-04-S",
-      "branch_th": "กองทัพเรือ",
-      "branch_en": "Royal Thai Navy",
-      "type_th": "ชั้นสัญญาบัตร",
-      "type_en": "Commissioned Officer",
-      "rank_th": "ว่าที่นาวาเอก (พิเศษ)",
-      "rank_en": "Acting Senior Captain",
-      "abbr_th": "ว่าที่ น.อ. (พิเศษ)",
-      "abbr_en": "ACT SR CAPT"
     }
   ],
   "Royal Thai Air Force": [
@@ -784,17 +762,6 @@
       "rank_en": "Senior Group Captain",
       "abbr_th": "น.อ. (พิเศษ)",
       "abbr_en": "SR GP CAPT"
-    },
-    {
-      "id": "RTAF-AO-04-S",
-      "branch_th": "กองทัพอากาศ",
-      "branch_en": "Royal Thai Air Force",
-      "type_th": "ชั้นสัญญาบัตร",
-      "type_en": "Commissioned Officer",
-      "rank_th": "ว่าที่นาวาอากาศเอก (พิเศษ)",
-      "rank_en": "Acting Senior Group Captain",
-      "abbr_th": "ว่าที่ น.อ. (พิเศษ)",
-      "abbr_en": "ACT SR GP CAPT"
     }
   ]
 }
