@@ -3,18 +3,33 @@ import json
 import os
 
 def csv_to_json(csv_path, flat_json_path, grouped_json_path, group_key):
-    """
-    Converts a CSV file to both flat and grouped JSON formats.
+    print(f"Converting {csv_path}...")
+    items = []
+    grouped_items = {}
     
-    Args:
-        csv_path (str): Path to the source CSV file.
-        flat_json_path (str): Path to save the flat JSON array.
-        grouped_json_path (str): Path to save the grouped JSON object.
-        group_key (str): The CSV column name to group by.
-    """
-    # Implementation will be added in the next task
-    print(f"Skeleton: Converting {csv_path} to {flat_json_path} and {grouped_json_path}...")
-    pass
+    if not os.path.exists(csv_path):
+        print(f"Error: {csv_path} not found.")
+        return
+
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            items.append(row)
+            
+            group_val = row[group_key]
+            if group_val not in grouped_items:
+                grouped_items[group_val] = []
+            grouped_items[group_val].append(row)
+            
+    # Write Flat JSON
+    with open(flat_json_path, 'w', encoding='utf-8') as f:
+        json.dump(items, f, ensure_ascii=False, indent=2)
+        
+    # Write Grouped JSON
+    with open(grouped_json_path, 'w', encoding='utf-8') as f:
+        json.dump(grouped_items, f, ensure_ascii=False, indent=2)
+        
+    print(f"Successfully generated {flat_json_path} and {grouped_json_path}")
 
 def main():
     # Ensure data/json directory exists

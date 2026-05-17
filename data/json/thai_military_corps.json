@@ -1,0 +1,352 @@
+[
+  {
+    "id": "RTA-CORPS-01",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารราบ",
+    "corps_en": "Infantry"
+  },
+  {
+    "id": "RTA-CORPS-02",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารม้า",
+    "corps_en": "Cavalry"
+  },
+  {
+    "id": "RTA-CORPS-03",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารปืนใหญ่",
+    "corps_en": "Artillery"
+  },
+  {
+    "id": "RTA-CORPS-04",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารช่าง",
+    "corps_en": "Engineers"
+  },
+  {
+    "id": "RTA-CORPS-05",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารสื่อสาร",
+    "corps_en": "Signals"
+  },
+  {
+    "id": "RTA-CORPS-06",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารการข่าว",
+    "corps_en": "Military Intelligence"
+  },
+  {
+    "id": "RTA-CORPS-07",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารพลาธิการ",
+    "corps_en": "Quartermaster"
+  },
+  {
+    "id": "RTA-CORPS-08",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารสรรพาวุธ",
+    "corps_en": "Ordnance"
+  },
+  {
+    "id": "RTA-CORPS-09",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารขนส่ง",
+    "corps_en": "Transport"
+  },
+  {
+    "id": "RTA-CORPS-10",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารแพทย์",
+    "corps_en": "Medical"
+  },
+  {
+    "id": "RTA-CORPS-11",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารการเงิน",
+    "corps_en": "Finance"
+  },
+  {
+    "id": "RTA-CORPS-12",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารสารบรรณ",
+    "corps_en": "Adjutant General"
+  },
+  {
+    "id": "RTA-CORPS-13",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารสารวัตร",
+    "corps_en": "Military Police"
+  },
+  {
+    "id": "RTA-CORPS-14",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารพระธรรมนูญ",
+    "corps_en": "Judge Advocate General"
+  },
+  {
+    "id": "RTA-CORPS-15",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารการสัตว์",
+    "corps_en": "Animal Transport"
+  },
+  {
+    "id": "RTA-CORPS-16",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารดุริยางค์",
+    "corps_en": "Band"
+  },
+  {
+    "id": "RTA-CORPS-17",
+    "branch_th": "กองทัพบก",
+    "branch_en": "Royal Thai Army",
+    "corps_th": "เหล่าทหารไปรษณีย์",
+    "corps_en": "Post"
+  },
+  {
+    "id": "RTN-CORPS-01",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "พรรคนาวิน",
+    "corps_en": "Line Group"
+  },
+  {
+    "id": "RTN-CORPS-02",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "พรรคกลิน",
+    "corps_en": "Engineering Group"
+  },
+  {
+    "id": "RTN-CORPS-03",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "พรรคนาวิกโยธิน",
+    "corps_en": "Marine Corps Group"
+  },
+  {
+    "id": "RTN-CORPS-04",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "พรรคพิเศษ",
+    "corps_en": "Special Group"
+  },
+  {
+    "id": "RTN-CORPS-05",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารพลาธิการ",
+    "corps_en": "Quartermaster Corps"
+  },
+  {
+    "id": "RTN-CORPS-06",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารแพทย์",
+    "corps_en": "Medical Corps"
+  },
+  {
+    "id": "RTN-CORPS-07",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารการเงิน",
+    "corps_en": "Finance Corps"
+  },
+  {
+    "id": "RTN-CORPS-08",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารพระธรรมนูญ",
+    "corps_en": "Judge Advocate General Corps"
+  },
+  {
+    "id": "RTN-CORPS-09",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารสารบรรณ",
+    "corps_en": "Adjutant General Corps"
+  },
+  {
+    "id": "RTN-CORPS-10",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารช่าง",
+    "corps_en": "Engineers Corps"
+  },
+  {
+    "id": "RTN-CORPS-11",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารสรรพาวุธ",
+    "corps_en": "Ordnance Corps"
+  },
+  {
+    "id": "RTN-CORPS-12",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารดุริยางค์",
+    "corps_en": "Band Corps"
+  },
+  {
+    "id": "RTN-CORPS-13",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารสารวัตร",
+    "corps_en": "Military Police Corps"
+  },
+  {
+    "id": "RTN-CORPS-14",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารขนส่ง",
+    "corps_en": "Transport Corps"
+  },
+  {
+    "id": "RTN-CORPS-15",
+    "branch_th": "กองทัพเรือ",
+    "branch_en": "Royal Thai Navy",
+    "corps_th": "เหล่าทหารอุทกศาสตร์",
+    "corps_en": "Hydrographic Corps"
+  },
+  {
+    "id": "RTAF-CORPS-01",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารนักบิน",
+    "corps_en": "Pilots"
+  },
+  {
+    "id": "RTAF-CORPS-02",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารอากาศโยธิน",
+    "corps_en": "Air Security"
+  },
+  {
+    "id": "RTAF-CORPS-03",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารต่อสู้อากาศยาน",
+    "corps_en": "Anti-Aircraft Artillery"
+  },
+  {
+    "id": "RTAF-CORPS-04",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารช่างอากาศ",
+    "corps_en": "Aeronautical Engineering"
+  },
+  {
+    "id": "RTAF-CORPS-05",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารสื่อสารอิเล็กทรอนิกส์",
+    "corps_en": "Communications and Electronics"
+  },
+  {
+    "id": "RTAF-CORPS-06",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารสรรพาวุธ",
+    "corps_en": "Ordnance"
+  },
+  {
+    "id": "RTAF-CORPS-07",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารพลาธิการ",
+    "corps_en": "Quartermaster"
+  },
+  {
+    "id": "RTAF-CORPS-08",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารขนส่ง",
+    "corps_en": "Transport"
+  },
+  {
+    "id": "RTAF-CORPS-09",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารแพทย์",
+    "corps_en": "Medical"
+  },
+  {
+    "id": "RTAF-CORPS-10",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารการเงิน",
+    "corps_en": "Finance"
+  },
+  {
+    "id": "RTAF-CORPS-11",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารสารบรรณ",
+    "corps_en": "Adjutant General"
+  },
+  {
+    "id": "RTAF-CORPS-12",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารสารวัตร",
+    "corps_en": "Military Police"
+  },
+  {
+    "id": "RTAF-CORPS-13",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารพระธรรมนูญ",
+    "corps_en": "Judge Advocate General"
+  },
+  {
+    "id": "RTAF-CORPS-14",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารดุริยางค์",
+    "corps_en": "Band"
+  },
+  {
+    "id": "RTAF-CORPS-15",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารพัสดุ",
+    "corps_en": "Supply"
+  },
+  {
+    "id": "RTAF-CORPS-16",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารช่างโยธา",
+    "corps_en": "Civil Engineering"
+  },
+  {
+    "id": "RTAF-CORPS-17",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารแผนที่",
+    "corps_en": "Mapping/Survey"
+  },
+  {
+    "id": "RTAF-CORPS-18",
+    "branch_th": "กองทัพอากาศ",
+    "branch_en": "Royal Thai Air Force",
+    "corps_th": "เหล่าทหารอุตุ",
+    "corps_en": "Meteorology"
+  }
+]
