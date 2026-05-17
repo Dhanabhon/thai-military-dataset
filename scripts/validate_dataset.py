@@ -100,7 +100,7 @@ if __name__ == "__main__":
         },
         {
             "path": "data/csv/thai_military_corps.csv",
-            "fields": ['id', 'branch_th', 'branch_en', 'corps_th', 'corps_en']
+            "fields": ['id', 'branch_th', 'branch_en', 'type_th', 'type_en', 'corps_th', 'corps_en']
         }
     ]
     
@@ -119,13 +119,13 @@ if __name__ == "__main__":
         },
         {
             "path": "data/json/thai_military_corps.json",
-            "fields": ['id', 'branch_th', 'branch_en', 'corps_th', 'corps_en'],
+            "fields": ['id', 'branch_th', 'branch_en', 'type_th', 'type_en', 'corps_th', 'corps_en'],
             "count": 50,
             "grouped": False
         },
         {
             "path": "data/json/thai_military_corps_grouped.json",
-            "fields": ['id', 'branch_th', 'branch_en', 'corps_th', 'corps_en'],
+            "fields": ['id', 'branch_th', 'branch_en', 'type_th', 'type_en', 'corps_th', 'corps_en'],
             "count": 50,
             "grouped": True
         }
