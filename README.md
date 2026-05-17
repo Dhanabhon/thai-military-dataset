@@ -5,6 +5,20 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
+## สารบัญ (Table of Contents)
+- [เกี่ยวกับโปรเจกต์ (About)](#เกี่ยวกับโปรเจกต์-about)
+- [เดโม (Live Demo)](#เดโม-live-demo)
+- [โครงสร้างโปรเจกต์ (Project Structure)](#โครงสร้างโปรเจกต์-project-structure)
+- [พัฒนาโดยใช้ (Built With)](#พัฒนาโดยใช้-built-with)
+- [รูปแบบข้อมูล (Data Formats)](#รูปแบบข้อมูล-data-formats)
+- [ข้อมูลสรุป (Dataset Summary)](#ข้อมูลสรุป-dataset-summary)
+- [โครงสร้างข้อมูล (Data Schema)](#โครงสร้างข้อมูล-data-schema)
+- [การนำไปใช้งาน (Getting Started)](#การนำไปใช้งาน-getting-started)
+- [การตั้งค่า GitHub Pages (Deployment)](#การตั้งค่า-github-pages-deployment)
+- [การมีส่วนร่วม (Contributing)](#การมีส่วนร่วม-contributing)
+- [แหล่งข้อมูลอ้างอิง (References)](#แหล่งข้อมูลอ้างอิง-references)
+- [ลิขสิทธิ์ (License)](#ลิขสิทธิ์-license)
+
 ## เกี่ยวกับโปรเจกต์ (About)
 โปรเจกต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลชั้นยศและเหล่าทหาร (Corps) ของประเทศไทยจากทั้ง 3 เหล่าทัพ ให้อยู่ในรูปแบบโครงสร้างข้อมูลมาตรฐาน (Structured Data) ซึ่งจะช่วยลดเวลาและภาระของนักพัฒนาที่ต้องการข้อมูลส่วนนี้ไปใช้ในระบบต่างๆ ไม่ว่าจะเป็น ระบบ HR, ระบบจัดการบุคลากร, แอปพลิเคชัน หรือแม้แต่งานวิเคราะห์ข้อมูล (Data Analytics)
 
@@ -31,7 +45,7 @@
 │   ├── generate_sql.py
 │   └── validate_dataset.py
 ├── docs/             # เอกสารการออกแบบและแผนการพัฒนา
-├── examples/         # ตัวอย่างการใช้งาน
+├── examples/         # ตัวอย่างการใช้งาน (Python, JS, SQL)
 └── README.md
 ```
 
@@ -94,7 +108,17 @@
 git clone https://github.com/Dhanabhon/thai-military-dataset.git
 ```
 2. เลือกไฟล์ในโฟลเดอร์ตามรูปแบบที่คุณต้องการใช้งาน
-3. นำข้อมูลไปใช้ร่วมกับโปรเจกต์ของคุณได้ทันที!
+3. ดูตัวอย่างการเขียนโค้ดได้ที่โฟลเดอร์ `examples/` ซึ่งมีตัวอย่างสำหรับ:
+   - **Python:** การโหลด JSON และการอ่าน CSV
+   - **JavaScript:** การใช้งานใน Node.js
+   - **SQL:** ตัวอย่าง Query ที่เป็นประโยชน์
+
+## การตั้งค่า GitHub Pages (Deployment)
+หากคุณต้องการเปิดใช้งานหน้า Demo บน Repository ของคุณเอง:
+1. ไปที่ **Settings** > **Pages**
+2. ในส่วน **Build and deployment** ให้เลือก Branch เป็น `main` และโฟลเดอร์เป็น `/(root)`
+3. กด **Save** แล้วรอสักครู่
+4. เข้าใช้งานได้ที่ `https://<username>.github.io/thai-military-dataset/demo/`
 
 ## การมีส่วนร่วม (Contributing)
 โปรเจกต์นี้เป็น Open-source ที่เปิดรับการมีส่วนร่วมจากทุกคน หากคุณพบข้อมูลที่ไม่ถูกต้อง พิมพ์ผิด หรือต้องการเพิ่มรูปแบบข้อมูลใหม่ๆ:
