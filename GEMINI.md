@@ -24,6 +24,7 @@ This project is an open-source dataset containing the ranks and corps (เหล
 - `examples/`: (Planned) Examples of how to use the data in various programming languages.
 - `scripts/`: Utility scripts for the dataset.
   - `generate_json.py`: Generates JSON files from CSV data.
+  - `generate_sql.py`: Generates SQL scripts from CSV data.
   - `validate_dataset.py`: Ensures data integrity across CSV files.
 
 ## Data Schema
@@ -63,7 +64,7 @@ The data follows a standardized schema:
 ## TODOs
 - [x] Populate `data/json/` with Thai military rank and corps data.
 - [x] Populate `data/csv/` with Thai military rank and corps data.
-- [ ] Populate `data/sql/` with database creation and insertion scripts.
+- [x] Populate `data/sql/` with database creation and insertion scripts.
 - [ ] Add usage examples in the `examples/` directory.
 - [x] Add utility scripts in the `scripts/` directory.
 
