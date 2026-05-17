@@ -29,7 +29,7 @@
 
 ## เดโม (Live Demo)
 คุณสามารถดูตัวอย่างการแสดงผลข้อมูลและค้นหายศ/เหล่าทหารได้ที่:
-👉 **[https://Dhanabhon.github.io/thai-military-dataset/demo/](https://Dhanabhon.github.io/thai-military-dataset/demo/)**
+👉 **[https://dhanabhon.github.io/thai-military-dataset/demo/](https://dhanabhon.github.io/thai-military-dataset/demo/)**
 
 ## โครงสร้างโปรเจกต์ (Project Structure)
 ```text
