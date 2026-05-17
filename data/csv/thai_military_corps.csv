@@ -1,0 +1,18 @@
+id,branch_th,branch_en,corps_th,corps_en
+RTA-CORPS-01,กองทัพบก,Royal Thai Army,เหล่าทหารราบ,Infantry
+RTA-CORPS-02,กองทัพบก,Royal Thai Army,เหล่าทหารม้า,Cavalry
+RTA-CORPS-03,กองทัพบก,Royal Thai Army,เหล่าทหารปืนใหญ่,Artillery
+RTA-CORPS-04,กองทัพบก,Royal Thai Army,เหล่าทหารช่าง,Engineers
+RTA-CORPS-05,กองทัพบก,Royal Thai Army,เหล่าทหารสื่อสาร,Signals
+RTA-CORPS-06,กองทัพบก,Royal Thai Army,เหล่าทหารการข่าว,Military Intelligence
+RTA-CORPS-07,กองทัพบก,Royal Thai Army,เหล่าทหารพลาธิการ,Quartermaster
+RTA-CORPS-08,กองทัพบก,Royal Thai Army,เหล่าทหารสรรพาวุธ,Ordnance
+RTA-CORPS-09,กองทัพบก,Royal Thai Army,เหล่าทหารขนส่ง,Transport
+RTA-CORPS-10,กองทัพบก,Royal Thai Army,เหล่าทหารแพทย์,Medical
+RTA-CORPS-11,กองทัพบก,Royal Thai Army,เหล่าทหารการเงิน,Finance
+RTA-CORPS-12,กองทัพบก,Royal Thai Army,เหล่าทหารสารบรรณ,Adjutant General
+RTA-CORPS-13,กองทัพบก,Royal Thai Army,เหล่าทหารสารวัตร,Military Police
+RTA-CORPS-14,กองทัพบก,Royal Thai Army,เหล่าทหารพระธรรมนูญ,Judge Advocate General
+RTA-CORPS-15,กองทัพบก,Royal Thai Army,เหล่าทหารการสัตว์,Animal Transport
+RTA-CORPS-16,กองทัพบก,Royal Thai Army,เหล่าทหารดุริยางค์,Band
+RTA-CORPS-17,กองทัพบก,Royal Thai Army,เหล่าทหารไปรษณีย์,Post
