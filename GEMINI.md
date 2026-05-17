@@ -65,6 +65,6 @@ The data follows a standardized schema:
 - [x] Populate `data/json/` with Thai military rank and corps data.
 - [x] Populate `data/csv/` with Thai military rank and corps data.
 - [x] Populate `data/sql/` with database creation and insertion scripts.
-- [ ] Add usage examples in the `examples/` directory.
+- [x] Add usage examples in the `examples/` directory.
 - [x] Add utility scripts in the `scripts/` directory.
 
