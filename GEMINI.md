@@ -57,7 +57,7 @@ The data follows a standardized schema:
 
 ## TODOs
 - [ ] Populate `data/json/` with Thai military rank data.
-- [/] Populate `data/csv/` with Thai military rank data.
+- [x] Populate `data/csv/` with Thai military rank data.
 - [ ] Populate `data/sql/` with database creation and insertion scripts.
 - [ ] Add usage examples in the `examples/` directory.
 - [ ] Add utility scripts in the `scripts/` directory.
