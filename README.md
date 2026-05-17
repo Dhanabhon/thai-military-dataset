@@ -13,6 +13,10 @@
 - **กองทัพเรือ** (Royal Thai Navy - RTN)
 - **กองทัพอากาศ** (Royal Thai Air Force - RTAF)
 
+## เดโม (Live Demo)
+คุณสามารถดูตัวอย่างการแสดงผลข้อมูลและค้นหายศ/เหล่าทหารได้ที่:
+👉 **[https://Dhanabhon.github.io/thai-military-dataset/](https://Dhanabhon.github.io/thai-military-dataset/)**
+
 ## โครงสร้างโปรเจกต์ (Project Structure)
 ```text
 .
