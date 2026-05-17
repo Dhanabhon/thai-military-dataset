@@ -1,22 +1,25 @@
-# Thai Military Rank Dataset
+# Thai Military Dataset
 
-This project is an open-source dataset containing the ranks of the Thai military branches: Royal Thai Army (RTA), Royal Thai Navy (RTN), and Royal Thai Air Force (RTAF). It provides structured data in various formats for developers to use in their applications.
+This project is an open-source dataset containing the ranks and corps (เหล่า) of the Thai military branches: Royal Thai Army (RTA), Royal Thai Navy (RTN), and Royal Thai Air Force (RTAF). It provides structured data in various formats for developers to use in their applications.
 
 ## Project Overview
 
-- **Purpose:** To provide a standardized, ready-to-use dataset of Thai military ranks.
+- **Purpose:** To provide a standardized, ready-to-use dataset of Thai military ranks and corps.
 - **Target Audience:** Software developers building HR systems, personnel management applications, or performing data analytics.
-- **Scope:** Includes ranks from the Army, Navy, and Air Force.
+- **Scope:** Includes ranks and corps from the Army, Navy, and Air Force.
 - **License:** MIT License.
 
 ## Project Structure
 
 - `data/`: The core of the project, containing the dataset in different formats.
   - `csv/`: For data analysis, machine learning, and spreadsheets.
+    - `thai_military_ranks.csv`: Comprehensive rank data.
+    - `thai_military_corps.csv`: Comprehensive corps and groups data.
   - `json/`: For web/mobile applications and APIs.
   - `sql/`: SQL scripts for database integration (MySQL, PostgreSQL, SQLite).
 - `examples/`: (Planned) Examples of how to use the data in various programming languages.
-- `scripts/`: Scripts for data processing, validation, or format conversion.
+- `scripts/`: Utility scripts for the dataset.
+  - `validate_dataset.py`: Ensures data integrity across CSV files.
 
 ## Data Schema
 
