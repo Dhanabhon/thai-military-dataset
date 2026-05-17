@@ -47,3 +47,9 @@ RTAF-N-04,กองทัพอากาศ,Royal Thai Air Force,ชั้นป
 RTAF-N-05,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,จ่าอากาศโท,Corporal,จ.ท.,CPL
 RTAF-N-06,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,จ่าอากาศตรี,Leading Aircraftman,จ.ต.,LAC
 RTAF-N-07,กองทัพอากาศ,Royal Thai Air Force,ชั้นประทวน,Non-Commissioned Officer,พลทหาร,Airman,พลฯ,AIR
+RTA-AO-04,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่พันเอก,Acting Colonel,ว่าที่ พ.อ.,ACT COL
+RTA-AO-05,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่พันโท,Acting Lieutenant Colonel,ว่าที่ พ.ท.,ACT LTC
+RTA-AO-06,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่พันตรี,Acting Major,ว่าที่ พ.ต.,ACT MAJ
+RTA-AO-07,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่ร้อยเอก,Acting Captain,ว่าที่ ร.อ.,ACT CPT
+RTA-AO-08,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่ร้อยโท,Acting Lieutenant,ว่าที่ ร.ท.,ACT LT
+RTA-AO-09,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่ร้อยตรี,Acting Second Lieutenant,ว่าที่ ร.ต.,ACT 2LT
