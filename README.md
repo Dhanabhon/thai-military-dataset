@@ -15,7 +15,7 @@
 
 ## รูปแบบข้อมูล (Data Formats)
 ข้อมูลถูกจัดเตรียมไว้หลายรูปแบบเพื่อให้ครอบคลุมทุกการใช้งาน:
-- **`JSON`** - เหมาะสำหรับ Web Applications, APIs และ Mobile Apps
+- **`JSON`** - มีทั้งแบบรายการแบน (Flat List) และแบบจัดกลุ่มตามเหล่าทัพ (Grouped by Branch) เหมาะสำหรับ Web Applications, APIs และ Mobile Apps
 - **`CSV`** - เหมาะสำหรับงาน Data Analysis, Machine Learning หรือนำเข้า Spreadsheet
 - **`SQL`** - Script สำหรับสร้างตารางและนำเข้าข้อมูลเข้าสู่ Relational Database (เช่น MySQL, PostgreSQL, SQLite)
 

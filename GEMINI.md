@@ -16,9 +16,14 @@ This project is an open-source dataset containing the ranks and corps (เหล
     - `thai_military_ranks.csv`: Comprehensive rank data.
     - `thai_military_corps.csv`: Comprehensive corps and groups data.
   - `json/`: For web/mobile applications and APIs.
+    - `thai_military_ranks.json`: Comprehensive rank data.
+    - `thai_military_ranks_grouped.json`: Rank data grouped by branch.
+    - `thai_military_corps.json`: Comprehensive corps data.
+    - `thai_military_corps_grouped.json`: Corps data grouped by branch.
   - `sql/`: SQL scripts for database integration (MySQL, PostgreSQL, SQLite).
 - `examples/`: (Planned) Examples of how to use the data in various programming languages.
 - `scripts/`: Utility scripts for the dataset.
+  - `generate_json.py`: Generates JSON files from CSV data.
   - `validate_dataset.py`: Ensures data integrity across CSV files.
 
 ## Data Schema
@@ -59,7 +64,7 @@ The data follows a standardized schema:
 - **Contributions:** Contributions are welcome. Please ensure new data follows the existing schema and includes proper references.
 
 ## TODOs
-- [ ] Populate `data/json/` with Thai military rank data.
+- [x] Populate `data/json/` with Thai military rank data.
 - [x] Populate `data/csv/` with Thai military rank data.
 - [ ] Populate `data/sql/` with database creation and insertion scripts.
 - [ ] Add usage examples in the `examples/` directory.
