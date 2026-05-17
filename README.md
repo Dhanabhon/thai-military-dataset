@@ -13,6 +13,22 @@
 - **กองทัพเรือ** (Royal Thai Navy - RTN)
 - **กองทัพอากาศ** (Royal Thai Air Force - RTAF)
 
+## โครงสร้างโปรเจกต์ (Project Structure)
+```text
+.
+├── data/
+│   ├── csv/          # ไฟล์ข้อมูลรูปแบบ CSV (Source of Truth)
+│   ├── json/         # ไฟล์ข้อมูลรูปแบบ JSON (Flat & Grouped)
+│   └── sql/          # ไฟล์ Script สำหรับ SQL (MySQL, Postgres, SQLite)
+├── scripts/          # สคริปต์สำหรับจัดการข้อมูล
+│   ├── generate_json.py
+│   ├── generate_sql.py
+│   └── validate_dataset.py
+├── docs/             # เอกสารการออกแบบและแผนการพัฒนา
+├── examples/         # ตัวอย่างการใช้งาน (Planned)
+└── README.md
+```
+
 ## พัฒนาโดยใช้ (Built With)
 โปรเจกต์นี้ได้รับการพัฒนาและจัดเตรียมข้อมูลโดยใช้ **Gemini AI** (Gemini CLI) ในทุกขั้นตอน ตั้งแต่การจัดโครงสร้างข้อมูล (Data Structuring), การแปลงรูปแบบไฟล์ (JSON/SQL Generation), ไปจนถึงการเขียนสคริปต์ตรวจสอบความถูกต้อง (Validation Scripts) เพื่อให้มั่นใจว่าข้อมูลมีมาตรฐานและพร้อมใช้งานสูงสุด
 
