@@ -15,3 +15,19 @@ RTA-N-04,กองทัพบก,Royal Thai Army,ชั้นประทวน
 RTA-N-05,กองทัพบก,Royal Thai Army,ชั้นประทวน,Non-Commissioned Officer,สิบโท,Corporal,ส.ท.,CPL
 RTA-N-06,กองทัพบก,Royal Thai Army,ชั้นประทวน,Non-Commissioned Officer,สิบตรี,Lance Corporal,ส.ต.,LCPL
 RTA-N-07,กองทัพบก,Royal Thai Army,ชั้นประทวน,Non-Commissioned Officer,พลทหาร,Private,พลฯ,PVT
+RTN-O-01,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,พลเรือเอก,Admiral,พล.ร.อ.,ADM
+RTN-O-02,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,พลเรือโท,Vice Admiral,พล.ร.ท.,VADM
+RTN-O-03,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,พลเรือตรี,Rear Admiral,พล.ร.ต.,RADM
+RTN-O-04,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,นาวาเอก,Captain,น.อ.,CAPT
+RTN-O-05,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,นาวาโท,Commander,น.ท.,CDR
+RTN-O-06,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,นาวาตรี,Lieutenant Commander,น.ต.,LCDR
+RTN-O-07,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,เรือเอก,Lieutenant,ร.อ.,LT
+RTN-O-08,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,เรือโท,Lieutenant Junior Grade,ร.ท.,LTJG
+RTN-O-09,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,เรือตรี,Sub Lieutenant,ร.ต.,SUB LT
+RTN-N-01,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,พันจ่าเอก,Chief Petty Officer 1st Class,พ.จ.อ.,CPO1
+RTN-N-02,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,พันจ่าโท,Chief Petty Officer 2nd Class,พ.จ.ท.,CPO2
+RTN-N-03,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,พันจ่าตรี,Chief Petty Officer 3rd Class,พ.จ.ต.,CPO3
+RTN-N-04,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,จ่าเอก,Petty Officer 1st Class,จ.อ.,PO1
+RTN-N-05,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,จ่าโท,Petty Officer 2nd Grade,จ.ท.,PO2
+RTN-N-06,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,จ่าตรี,Petty Officer 3rd Grade,จ.ต.,PO3
+RTN-N-07,กองทัพเรือ,Royal Thai Navy,ชั้นประทวน,Non-Commissioned Officer,พลทหาร,Seaman,พลฯ,SEA
