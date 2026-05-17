@@ -19,6 +19,18 @@
 - **`CSV`** - เหมาะสำหรับงาน Data Analysis, Machine Learning หรือนำเข้า Spreadsheet
 - **`SQL`** - Script สำหรับสร้างตารางและนำเข้าข้อมูลเข้าสู่ Relational Database (เช่น MySQL, PostgreSQL, SQLite)
 
+## ข้อมูลสรุป (Dataset Summary)
+จำนวนข้อมูลทั้งหมดในโปรเจกต์ (อัปเดตล่าสุด: พฤษภาคม 2026):
+
+| เหล่าทัพ (Branch) | ชั้นยศ (Ranks) | เหล่า/พรรค (Corps) |
+| :--- | :---: | :---: |
+| **กองทัพบก** (Royal Thai Army) | 24 | 17 |
+| **กองทัพเรือ** (Royal Thai Navy) | 24 | 15 |
+| **กองทัพอากาศ** (Royal Thai Air Force) | 24 | 18 |
+| **รวม (Total)** | **72** | **50** |
+
+*หมายเหตุ: ข้อมูลชั้นยศรวมทั้งยศปกติ, ว่าที่ (Acting), และยศพิเศษ*
+
 ## โครงสร้างข้อมูล (Data Schema)
 
 ### 1. ข้อมูลชั้นยศ (Ranks)
@@ -38,10 +50,17 @@
 ```
 
 ### 2. ข้อมูลเหล่าทหาร (Corps/Groups)
-ตัวอย่างโครงสร้างข้อมูล (CSV format):
-```csv
-id,branch_th,branch_en,corps_th,corps_en
-RTA-CORPS-01,กองทัพบก,Royal Thai Army,เหล่าทหารราบ,Infantry
+ตัวอย่างโครงสร้างข้อมูล (JSON format):
+```json
+{
+  "id": "RTA-CORPS-01",
+  "branch_th": "กองทัพบก",
+  "branch_en": "Royal Thai Army",
+  "type_th": "เหล่า",
+  "type_en": "Corps",
+  "corps_th": "เหล่าทหารราบ",
+  "corps_en": "Infantry"
+}
 ```
 
 ## การนำไปใช้งาน (Getting Started)

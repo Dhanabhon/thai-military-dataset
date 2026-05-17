@@ -30,9 +30,10 @@ This project is an open-source dataset containing the ranks and corps (เหล
 
 The data follows a standardized schema:
 
+### 1. Ranks
 | Field | Description | Example |
 | :--- | :--- | :--- |
-| `id` | Unique reference ID for the rank | `RTA-O-01` |
+| `id` | Unique reference ID | `RTA-O-01` |
 | `branch_th` | Military branch (Thai) | `กองทัพบก` |
 | `branch_en` | Military branch (English) | `Royal Thai Army` |
 | `type_th` | Rank type (Thai) | `ชั้นสัญญาบัตร` |
@@ -42,20 +43,16 @@ The data follows a standardized schema:
 | `abbr_th` | Rank abbreviation (Thai) | `พล.อ.` |
 | `abbr_en` | Rank abbreviation (English) | `GEN` |
 
-### JSON Example:
-```json
-{
-  "id": "RTA-O-01",
-  "branch_th": "กองทัพบก",
-  "branch_en": "Royal Thai Army",
-  "type_th": "ชั้นสัญญาบัตร",
-  "type_en": "Commissioned Officer",
-  "rank_th": "พลเอก",
-  "rank_en": "General",
-  "abbr_th": "พล.อ.",
-  "abbr_en": "GEN"
-}
-```
+### 2. Corps
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| `id` | Unique reference ID | `RTA-CORPS-01` |
+| `branch_th` | Military branch (Thai) | `กองทัพบก` |
+| `branch_en` | Military branch (English) | `Royal Thai Army` |
+| `type_th` | Corps/Group type (Thai) | `เหล่า` |
+| `type_en` | Corps/Group type (English) | `Corps` |
+| `corps_th` | Corps name (Thai) | `เหล่าทหารราบ` |
+| `corps_en` | Corps name (English) | `Infantry` |
 
 ## Usage and Development
 
@@ -64,8 +61,9 @@ The data follows a standardized schema:
 - **Contributions:** Contributions are welcome. Please ensure new data follows the existing schema and includes proper references.
 
 ## TODOs
-- [x] Populate `data/json/` with Thai military rank data.
-- [x] Populate `data/csv/` with Thai military rank data.
+- [x] Populate `data/json/` with Thai military rank and corps data.
+- [x] Populate `data/csv/` with Thai military rank and corps data.
 - [ ] Populate `data/sql/` with database creation and insertion scripts.
 - [ ] Add usage examples in the `examples/` directory.
 - [x] Add utility scripts in the `scripts/` directory.
+
