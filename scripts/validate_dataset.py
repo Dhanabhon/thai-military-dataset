@@ -101,7 +101,7 @@ def validate_sql_file(file_path):
     # Basic check for CREATE and INSERT keywords
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
-        if "CREATE TABLE" not in content or "INSERT INTO" not in content:
+        if "CREATE TABLE" not in content or ("INSERT INTO" not in content and "INSERT IGNORE INTO" not in content):
             print(f"ERROR: {file_path} is missing basic SQL commands.")
             return False
             
