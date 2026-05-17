@@ -15,7 +15,7 @@
 
 ## เดโม (Live Demo)
 คุณสามารถดูตัวอย่างการแสดงผลข้อมูลและค้นหายศ/เหล่าทหารได้ที่:
-👉 **[https://Dhanabhon.github.io/thai-military-dataset/](https://Dhanabhon.github.io/thai-military-dataset/)**
+👉 **[https://Dhanabhon.github.io/thai-military-dataset/demo/](https://Dhanabhon.github.io/thai-military-dataset/demo/)**
 
 ## โครงสร้างโปรเจกต์ (Project Structure)
 ```text
@@ -24,12 +24,14 @@
 │   ├── csv/          # ไฟล์ข้อมูลรูปแบบ CSV (Source of Truth)
 │   ├── json/         # ไฟล์ข้อมูลรูปแบบ JSON (Flat & Grouped)
 │   └── sql/          # ไฟล์ Script สำหรับ SQL (MySQL, Postgres, SQLite)
+├── demo/             # เว็บไซต์ตัวอย่าง (Interactive Demo)
+│   └── index.html
 ├── scripts/          # สคริปต์สำหรับจัดการข้อมูล
 │   ├── generate_json.py
 │   ├── generate_sql.py
 │   └── validate_dataset.py
 ├── docs/             # เอกสารการออกแบบและแผนการพัฒนา
-├── examples/         # ตัวอย่างการใช้งาน (Planned)
+├── examples/         # ตัวอย่างการใช้งาน
 └── README.md
 ```
 

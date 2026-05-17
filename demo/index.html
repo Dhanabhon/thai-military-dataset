@@ -13,7 +13,7 @@
             <div class="font-bold text-xl tracking-tight">🇹🇭 Thai Military Data</div>
             <nav class="flex gap-6 text-sm font-medium text-slate-500">
                 <a href="https://github.com/Dhanabhon/thai-military-dataset" class="hover:text-slate-900">GitHub</a>
-                <a href="docs/superpowers/specs/2026-05-18-github-pages-demo-design.md" class="hover:text-slate-900">Documentation</a>
+                <a href="../docs/superpowers/specs/2026-05-18-github-pages-demo-design.md" class="hover:text-slate-900">Documentation</a>
             </nav>
         </header>
 
@@ -53,8 +53,8 @@
             const input = document.getElementById('search-input');
             try {
                 const [ranksRes, corpsRes] = await Promise.all([
-                    fetch('data/json/thai_military_ranks.json'),
-                    fetch('data/json/thai_military_corps.json')
+                    fetch('../data/json/thai_military_ranks.json'),
+                    fetch('../data/json/thai_military_corps.json')
                 ]);
                 ranks = await ranksRes.json();
                 corps = await corpsRes.json();
