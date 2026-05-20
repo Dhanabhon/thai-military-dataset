@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇹🇭 Thai Military Dataset - Demo</title>
+    <title>🇹🇭 Thai Military Dataset - Tactical Demo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes scanline {
@@ -15,33 +15,36 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Organic Woodland Camouflage Pattern */
-        .bg-woodland-camo {
-            background-color: #4b5320; /* Base: Olive Drab */
+        /* Thai Digital Camouflage Pattern */
+        .bg-thai-digital {
+            background-color: #3b4632; /* Mid Green */
             background-image: 
-                radial-gradient(circle at 20% 30%, #2a2e16 15%, transparent 20%),
-                radial-gradient(circle at 80% 70%, #2a2e16 18%, transparent 25%),
-                radial-gradient(circle at 40% 80%, #5c4d32 12%, transparent 18%),
-                radial-gradient(circle at 70% 20%, #5c4d32 15%, transparent 22%),
-                radial-gradient(circle at 10% 90%, #8b7355 10%, transparent 15%),
-                radial-gradient(circle at 90% 10%, #8b7355 14%, transparent 20%),
-                radial-gradient(circle at 50% 50%, #1a1d10 8%, transparent 12%);
-            background-size: 300px 300px;
+                /* Layer 1: Darkest Brown/Black blocks */
+                conic-gradient(from 0deg at 25% 25%, #1a1d10 25%, transparent 0) 0 0 / 60px 60px,
+                conic-gradient(from 0deg at 50% 50%, #1a1d10 25%, transparent 0) 30px 30px / 120px 120px,
+                /* Layer 2: Brownish blocks */
+                conic-gradient(from 0deg at 75% 75%, #463a2a 25%, transparent 0) 15px 15px / 80px 80px,
+                /* Layer 3: Light Green blocks */
+                conic-gradient(from 0deg at 10% 10%, #7b8e5c 25%, transparent 0) 45px 45px / 100px 100px,
+                /* Layer 4: Dark Green blocks */
+                conic-gradient(from 0deg at 40% 40%, #2a2e16 25%, transparent 0) 10px 10px / 50px 50px;
+            background-blend-mode: normal;
         }
 
         .scanline {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100px;
-            background: linear-gradient(180deg, transparent, rgba(255,255,255,0.03), transparent);
+            background: linear-gradient(180deg, transparent, rgba(255,255,255,0.05), transparent);
             pointer-events: none;
             z-index: 50;
-            animation: scanline 10s linear infinite;
+            animation: scanline 8s linear infinite;
         }
 
         .glass-panel {
             background: rgba(255, 255, 255, 0.94);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
 
         .result-item {
@@ -49,28 +52,28 @@
         }
     </style>
 </head>
-<body class="bg-woodland-camo min-h-screen font-sans text-stone-900 overflow-x-hidden">
+<body class="bg-thai-digital min-h-screen font-sans text-stone-900 overflow-x-hidden">
     <div class="scanline"></div>
     
     <div class="max-w-3xl mx-auto px-6 py-12 relative z-10">
         <!-- Header -->
-        <header class="flex justify-between items-center mb-16 px-6 py-5 rounded-2xl glass-panel shadow-xl border-t-4 border-[#2d3319]">
-            <div class="font-bold text-xl tracking-tight text-[#2d3319] flex items-center gap-2">
-                <span class="bg-[#2d3319] text-white px-2 py-0.5 rounded text-sm">THAI</span> 
-                <span class="tracking-widest">MILITARY DATASET</span>
+        <header class="flex justify-between items-center mb-16 px-6 py-5 rounded-2xl glass-panel border-t-4 border-[#1a1d10]">
+            <div class="font-bold text-xl tracking-tight text-[#1a1d10] flex items-center gap-2">
+                <span class="bg-[#1a1d10] text-white px-2 py-0.5 rounded text-sm font-black">THAI</span> 
+                <span class="tracking-widest font-black uppercase">Military Dataset</span>
             </div>
             <nav class="flex gap-6 text-[10px] font-black text-stone-500 uppercase tracking-[0.2em]">
-                <a href="https://github.com/Dhanabhon/thai-military-dataset" class="hover:text-[#4b5320]">GitHub</a>
-                <a href="../docs/superpowers/specs/2026-05-18-github-pages-demo-design.md" class="hover:text-[#4b5320]">Docs</a>
+                <a href="https://github.com/Dhanabhon/thai-military-dataset" class="hover:text-[#2a2e16]">GitHub</a>
+                <a href="../docs/superpowers/specs/2026-05-18-github-pages-demo-design.md" class="hover:text-[#2a2e16]">Docs</a>
             </nav>
         </header>
 
         <!-- Main -->
         <main class="text-center">
-            <h1 class="text-5xl font-black mb-4 tracking-tighter text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+            <h1 class="text-5xl font-black mb-4 tracking-tighter text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">
                 ค้นหายศ และเหล่าทหาร
             </h1>
-            <p class="text-lg text-stone-100 mb-10 font-medium drop-shadow-md">
+            <p class="text-lg text-stone-100 mb-10 font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
                 ระบบสืบค้นโครงสร้างบุคลากร 3 เหล่าทัพ
             </p>
             
@@ -79,21 +82,24 @@
             </div>
         </main>
 
-        <footer class="mt-24 text-center text-[10px] text-stone-200 font-bold uppercase tracking-[0.3em]">
-            Thai Military Dataset • 2026
+        <footer class="mt-24 text-center text-[10px] text-stone-200 font-bold uppercase tracking-[0.3em] drop-shadow-md">
+            Thai Military Dataset • Tactical UI v1.2
         </footer>
     </div>
     
     <script>
         const container = document.getElementById('search-container');
         container.innerHTML = `
-            <div class="relative">
-                <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none text-[#4b5320]">
+            <div class="relative group">
+                <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none text-[#1a1d10]">
                     <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </div>
-                <input type="text" id="search-input" disabled placeholder="กำลังโหลดข้อมูล..." class="block w-full pl-14 pr-6 py-4 border-2 border-transparent rounded-2xl bg-white text-[#2d3319] placeholder-stone-400 focus:outline-none focus:ring-4 focus:ring-[#4b5320]/20 focus:border-[#4b5320] shadow-2xl transition-all disabled:opacity-50 font-bold">
+                <input type="text" id="search-input" disabled placeholder="กำลังเชื่อมต่อฐานข้อมูล..." class="block w-full pl-14 pr-6 py-5 border-2 border-transparent rounded-2xl bg-white text-[#1a1d10] placeholder-stone-400 focus:outline-none focus:ring-8 focus:ring-[#1a1d10]/10 focus:border-[#1a1d10] shadow-2xl transition-all disabled:opacity-50 font-black">
+                <div class="absolute inset-y-0 right-0 pr-5 flex items-center">
+                    <div class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                </div>
             </div>
-            <div id="results-dropdown" class="hidden absolute z-10 mt-3 w-full glass-panel border border-stone-200 rounded-2xl shadow-2xl overflow-hidden max-h-96 overflow-y-auto">
+            <div id="results-dropdown" class="hidden absolute z-10 mt-4 w-full glass-panel border border-stone-200 rounded-3xl overflow-hidden max-h-96 overflow-y-auto">
                 <!-- Results will be injected here -->
             </div>
         `;
@@ -120,7 +126,7 @@
                 input.disabled = false;
                 input.placeholder = "ค้นหาชื่อยศ, เหล่า หรือตัวย่อ...";
             } catch (err) {
-                input.placeholder = "ERROR: FAILED TO LOAD";
+                input.placeholder = "ERROR: SYSTEM OFFLINE";
             }
         }
         init();
@@ -130,7 +136,7 @@
 
         function renderResults(results) {
             if (results.length === 0) {
-                dropdown.innerHTML = '<div class="px-6 py-8 text-sm text-stone-500 text-center font-bold">ไม่พบข้อมูล</div>';
+                dropdown.innerHTML = '<div class="px-6 py-10 text-sm text-stone-500 text-center font-black uppercase tracking-widest">No matching personnel found</div>';
             } else {
                 dropdown.innerHTML = results.map((item, index) => {
                     const isRank = 'rank_en' in item;
@@ -140,17 +146,17 @@
                     const branch = branchMap[item.branch_en] || item.branch_en;
                     
                     return `
-                        <div class="result-item px-6 py-4 hover:bg-[#4b5320]/5 cursor-pointer border-b border-stone-100 last:border-0 flex justify-between items-center group/item transition-all" style="animation-delay: ${index * 0.05}s">
+                        <div class="result-item px-8 py-5 hover:bg-[#1a1d10]/5 cursor-pointer border-b border-stone-100 last:border-0 flex justify-between items-center group/item transition-all" style="animation-delay: ${index * 0.05}s">
                             <div class="min-w-0">
-                                <div class="text-sm font-black text-[#2d3319] group-hover/item:text-[#4b5320] truncate">
-                                    ${name_th} <span class="text-stone-400 font-bold ml-1 text-xs uppercase">${name_en}</span>
+                                <div class="text-sm font-black text-[#1a1d10] group-hover/item:text-[#2a2e16] truncate">
+                                    ${name_th} <span class="text-stone-400 font-bold ml-1 text-[10px] uppercase tracking-tighter">${name_en}</span>
                                 </div>
-                                <div class="text-[9px] text-stone-500 uppercase tracking-widest flex items-center gap-2 mt-1 font-black">
-                                    <span class="px-1.5 py-0.5 rounded ${isRank ? 'bg-[#626d39] text-white' : 'bg-[#8b7355] text-white'}">${isRank ? 'RANK' : 'CORPS'}</span>
-                                    ${abbr ? '<span>•</span> <span class="text-[#4b5320]">' + abbr + '</span>' : ''}
+                                <div class="text-[9px] text-stone-500 uppercase tracking-[0.2em] flex items-center gap-2 mt-1.5 font-black">
+                                    <span class="px-2 py-0.5 rounded ${isRank ? 'bg-[#2a2e16] text-white' : 'bg-[#463a2a] text-white'}">${isRank ? 'RANK' : 'CORPS'}</span>
+                                    ${abbr ? '<span>•</span> <span class="text-[#1a1d10]">' + abbr + '</span>' : ''}
                                 </div>
                             </div>
-                            <span class="flex-shrink-0 text-[10px] font-black px-3 py-1 rounded-lg bg-stone-50 text-[#2d3319] border border-stone-100 uppercase tracking-tighter ml-4">${branch}</span>
+                            <span class="flex-shrink-0 text-[10px] font-black px-4 py-1.5 rounded-xl bg-stone-50 text-[#1a1d10] border border-stone-200 uppercase tracking-tighter ml-4">${branch}</span>
                         </div>
                     `;
                 }).join('');
