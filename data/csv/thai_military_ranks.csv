@@ -128,3 +128,9 @@ RTAF-AO-09-W,กองทัพอากาศ,Royal Thai Air Force,ชั้น
 RTA-O-04-S-W,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,พันเอก (พิเศษ)หญิง,Senior Colonel,พ.อ. (พิเศษ)หญิง,SR COL
 RTN-O-04-S-W,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,นาวาเอก (พิเศษ)หญิง,Senior Captain,น.อ. (พิเศษ)หญิง,SR CAPT
 RTAF-O-04-S-W,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,นาวาอากาศเอก (พิเศษ)หญิง,Senior Group Captain,น.อ. (พิเศษ)หญิง,SR GP CAPT
+RTA-O-07-W,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ร้อยเอกหญิง,Captain,ร.อ.หญิง,CPT
+RTN-O-07-W,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,เรือเอกหญิง,Lieutenant,ร.อ.หญิง,LT
+RTAF-O-07-W,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,เรืออากาศเอกหญิง,Flight Lieutenant,ร.อ.หญิง,FLT LT
+RTA-AO-07-W,กองทัพบก,Royal Thai Army,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่ร้อยเอกหญิง,Acting Captain,ว่าที่ ร.อ.หญิง,ACT CPT
+RTN-AO-07-W,กองทัพเรือ,Royal Thai Navy,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่เรือเอกหญิง,Acting Lieutenant,ว่าที่ ร.อ.หญิง,ACT LT
+RTAF-AO-07-W,กองทัพอากาศ,Royal Thai Air Force,ชั้นสัญญาบัตร,Commissioned Officer,ว่าที่เรืออากาศเอกหญิง,Acting Flight Lieutenant,ว่าที่ ร.อ.หญิง,ACT FLT LT

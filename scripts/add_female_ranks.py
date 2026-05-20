@@ -20,8 +20,12 @@ def generate_female_ranks():
             rows_to_process.append(row)
             
     for row in rows_to_process:
+        # Skip rows that are already female ranks
+        if row['id'].endswith('-W'):
+            continue
+            
         # Skip Level 07 NCOs (พลทหาร/พลฯ/ฯลฯ) which don't have distinct female forms
-        if row['id'].endswith('-07'):
+        if '-N-07' in row['id']:
             continue
         
         # Create female row ID
