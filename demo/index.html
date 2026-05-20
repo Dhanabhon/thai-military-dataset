@@ -6,15 +6,6 @@
     <title>🇹🇭 Thai Military Dataset - Tactical Demo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @keyframes scanline {
-            0% { transform: translateY(-100%); }
-            100% { transform: translateY(100vh); }
-        }
-        @keyframes result-entry {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
         /* Thai Digital Camouflage Pattern */
         .bg-thai-digital {
             background-color: #3b4632; /* Mid Green */
@@ -31,30 +22,16 @@
             background-blend-mode: normal;
         }
 
-        .scanline {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100px;
-            background: linear-gradient(180deg, transparent, rgba(255,255,255,0.05), transparent);
-            pointer-events: none;
-            z-index: 50;
-            animation: scanline 8s linear infinite;
-        }
-
         .glass-panel {
             background: rgba(255, 255, 255, 0.94);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
-
-        .result-item {
-            animation: result-entry 0.3s ease-out forwards;
-        }
     </style>
-</head>
-<body class="bg-thai-digital min-h-screen font-sans text-stone-900 overflow-x-hidden">
-    <div class="scanline"></div>
-    
+    </head>
+    <body class="bg-thai-digital min-h-screen font-sans text-stone-900 overflow-x-hidden">
+
     <div class="max-w-3xl mx-auto px-6 py-12 relative z-10">
         <!-- Header -->
         <header class="flex justify-between items-center mb-16 px-6 py-5 rounded-2xl glass-panel border-t-4 border-[#1a1d10]">
@@ -76,7 +53,7 @@
             <p class="text-lg text-stone-100 mb-10 font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
                 ระบบสืบค้นโครงสร้างบุคลากร 3 เหล่าทัพ
             </p>
-            
+
             <div id="search-container" class="relative text-left max-w-lg mx-auto">
                 <!-- Search UI Shell -->
             </div>
@@ -86,7 +63,7 @@
             Thai Military Dataset • Tactical UI v1.2
         </footer>
     </div>
-    
+
     <script>
         const container = document.getElementById('search-container');
         container.innerHTML = `
@@ -96,7 +73,7 @@
                 </div>
                 <input type="text" id="search-input" disabled placeholder="กำลังเชื่อมต่อฐานข้อมูล..." class="block w-full pl-14 pr-6 py-5 border-2 border-transparent rounded-2xl bg-white text-[#1a1d10] placeholder-stone-400 focus:outline-none focus:ring-8 focus:ring-[#1a1d10]/10 focus:border-[#1a1d10] shadow-2xl transition-all disabled:opacity-50 font-black">
                 <div class="absolute inset-y-0 right-0 pr-5 flex items-center">
-                    <div class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                    <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
                 </div>
             </div>
             <div id="results-dropdown" class="hidden absolute z-10 mt-4 w-full glass-panel border border-stone-200 rounded-3xl overflow-hidden max-h-96 overflow-y-auto">
@@ -122,7 +99,7 @@
                 ]);
                 ranks = await ranksRes.json();
                 corps = await corpsRes.json();
-                
+
                 input.disabled = false;
                 input.placeholder = "ค้นหาชื่อยศ, เหล่า หรือตัวย่อ...";
             } catch (err) {
@@ -144,9 +121,9 @@
                     const name_th = isRank ? item.rank_th : item.corps_th;
                     const abbr = isRank ? (item.abbr_en || '') : '';
                     const branch = branchMap[item.branch_en] || item.branch_en;
-                    
+
                     return `
-                        <div class="result-item px-8 py-5 hover:bg-[#1a1d10]/5 cursor-pointer border-b border-stone-100 last:border-0 flex justify-between items-center group/item transition-all" style="animation-delay: ${index * 0.05}s">
+                        <div class="result-item px-8 py-5 hover:bg-[#1a1d10]/5 cursor-pointer border-b border-stone-100 last:border-0 flex justify-between items-center group/item transition-all">
                             <div class="min-w-0">
                                 <div class="text-sm font-black text-[#1a1d10] group-hover/item:text-[#2a2e16] truncate">
                                     ${name_th} <span class="text-stone-400 font-bold ml-1 text-[10px] uppercase tracking-tighter">${name_en}</span>
