@@ -3,32 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇹🇭 เดโมชุดข้อมูลทหารไทย (Thai Military Dataset)</title>
+    <title>🇹🇭 Thai Military Dataset - Tactical Demo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes camo-drift {
+            from { background-position: 0 0, 15px 15px, 30px 30px, 45px 45px; }
+            to { background-position: 1000px 1000px, 1015px 1015px, 1030px 1030px, 1045px 1045px; }
+        }
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100vh); }
+        }
+        @keyframes result-entry {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .bg-digital-camo {
+            background-color: #3e4422; /* Olive Drab */
+            background-image: 
+                /* Black pixels */
+                linear-gradient(45deg, #1a1d10 25%, transparent 25%, transparent 75%, #1a1d10 75%, #1a1d10),
+                /* Dark Green blocks */
+                linear-gradient(45deg, #2a2e16 25%, transparent 25%, transparent 75%, #2a2e16 75%, #2a2e16),
+                /* Tan/Khaki pixels */
+                linear-gradient(45deg, #a39171 25%, transparent 25%, transparent 75%, #a39171 75%, #a39171),
+                /* Field Drab */
+                linear-gradient(45deg, #5c4d32 25%, transparent 25%, transparent 75%, #5c4d32 75%, #5c4d32);
+            background-size: 60px 60px;
+            background-position: 0 0, 15px 15px, 30px 30px, 45px 45px;
+            animation: camo-drift 120s linear infinite;
+        }
+
+        .scanline {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100px;
+            background: linear-gradient(180deg, transparent, rgba(255,255,255,0.05), transparent);
+            pointer-events: none;
+            z-index: 50;
+            animation: scanline 8s linear infinite;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .result-item {
+            animation: result-entry 0.3s ease-out forwards;
+        }
+    </style>
 </head>
-<body class="bg-[#f9faf6] min-h-screen font-sans text-stone-900">
-    <div class="max-w-3xl mx-auto px-6 py-12">
+<body class="bg-digital-camo min-h-screen font-sans text-stone-900 overflow-x-hidden">
+    <div class="scanline"></div>
+    
+    <div class="max-w-3xl mx-auto px-6 py-12 relative z-10">
         <!-- Header -->
-        <header class="flex justify-between items-center mb-16">
-            <div class="font-bold text-xl tracking-tight text-[#2d3319]">🇹🇭 ข้อมูลทหารไทย</div>
-            <nav class="flex gap-6 text-sm font-medium text-stone-500">
-                <a href="https://github.com/Dhanabhon/thai-military-dataset" class="hover:text-[#4b5320]">GitHub</a>
-                <a href="../docs/superpowers/specs/2026-05-18-github-pages-demo-design.md" class="hover:text-[#4b5320]">เอกสารโครงการ</a>
+        <header class="flex justify-between items-center mb-16 px-6 py-4 rounded-2xl glass-panel shadow-2xl border-t-4 border-[#4b5320]">
+            <div class="font-bold text-xl tracking-tighter text-[#2d3319] flex items-center gap-2">
+                <span class="bg-[#2d3319] text-white p-1 rounded">TH</span> 
+                <span>TACTICAL DATASET</span>
+            </div>
+            <nav class="flex gap-6 text-xs font-bold text-stone-500 uppercase tracking-widest">
+                <a href="https://github.com/Dhanabhon/thai-military-dataset" class="hover:text-[#4b5320] transition-colors">GitHub</a>
+                <a href="../docs/superpowers/specs/2026-05-18-github-pages-demo-design.md" class="hover:text-[#4b5320] transition-colors">Docs</a>
             </nav>
         </header>
 
         <!-- Main -->
         <main class="text-center">
-            <h1 class="text-4xl font-extrabold mb-4 tracking-tight text-[#2d3319]">ค้นหายศ และเหล่าทหาร</h1>
-            <p class="text-lg text-stone-500 mb-10">สำรวจชุดข้อมูลโครงสร้างบุคลากรทหารไทย (บก, เรือ, อากาศ) ที่สมบูรณ์ที่สุด</p>
+            <div class="inline-block px-3 py-1 bg-[#4b5320] text-white text-[10px] font-black tracking-[0.2em] rounded mb-6 uppercase shadow-lg">
+                Verified Personnel Database
+            </div>
+            <h1 class="text-5xl font-black mb-4 tracking-tighter text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
+                ค้นหายศ และเหล่าทหาร
+            </h1>
+            <p class="text-lg text-stone-200 mb-10 font-medium drop-shadow-md">
+                ระบบสืบค้นโครงสร้างบุคลากร 3 เหล่าทัพ (บก, เรือ, อากาศ)
+            </p>
             
             <div id="search-container" class="relative text-left max-w-lg mx-auto">
                 <!-- Search UI Shell -->
             </div>
         </main>
 
-        <footer class="mt-24 text-center text-xs text-stone-400">
-            สนับสนุนโดย Thai Military Dataset • พัฒนาด้วย Gemini AI
+        <footer class="mt-24 text-center text-[10px] text-stone-300 font-bold uppercase tracking-[0.3em] drop-shadow-sm">
+            Supported by Thai Military Dataset • Tactical System v1.1
         </footer>
     </div>
     
@@ -36,12 +97,15 @@
         const container = document.getElementById('search-container');
         container.innerHTML = `
             <div class="relative group">
-                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-stone-400">
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none text-[#4b5320]">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </div>
-                <input type="text" id="search-input" disabled placeholder="กำลังโหลดข้อมูล..." class="block w-full pl-11 pr-4 py-3 border border-stone-200 rounded-xl leading-5 bg-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4b5320] focus:border-[#4b5320] sm:text-sm shadow-sm transition-all disabled:opacity-50">
+                <input type="text" id="search-input" disabled placeholder="INITIALIZING SYSTEM..." class="block w-full pl-14 pr-6 py-4 border-2 border-transparent rounded-2xl leading-5 bg-white text-[#2d3319] placeholder-stone-400 focus:outline-none focus:ring-4 focus:ring-[#4b5320]/30 focus:border-[#4b5320] sm:text-sm shadow-2xl transition-all disabled:opacity-50 font-bold tracking-tight">
+                <div class="absolute inset-y-0 right-0 pr-4 flex items-center">
+                    <div class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                </div>
             </div>
-            <div id="results-dropdown" class="hidden absolute z-10 mt-2 w-full bg-white border border-stone-200 rounded-xl shadow-xl overflow-hidden max-h-96 overflow-y-auto">
+            <div id="results-dropdown" class="hidden absolute z-10 mt-3 w-full glass-panel border border-stone-200 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden max-h-96 overflow-y-auto">
                 <!-- Results will be injected here -->
             </div>
         `;
@@ -66,9 +130,9 @@
                 corps = await corpsRes.json();
                 
                 input.disabled = false;
-                input.placeholder = "ค้นหาด้วยชื่อยศ, เหล่า หรือคำย่อ...";
+                input.placeholder = "ค้นหาชื่อยศ, เหล่า หรือตัวย่อ...";
             } catch (err) {
-                input.placeholder = "ไม่สามารถโหลดข้อมูลได้";
+                input.placeholder = "SYSTEM ERROR: FAILED TO LOAD";
                 console.error('Failed to load data:', err);
             }
         }
@@ -79,9 +143,9 @@
 
         function renderResults(results) {
             if (results.length === 0) {
-                dropdown.innerHTML = '<div class="px-4 py-3 text-sm text-stone-500 text-center">ไม่พบข้อมูลที่ค้นหา</div>';
+                dropdown.innerHTML = '<div class="px-6 py-8 text-sm text-stone-500 text-center font-bold italic tracking-wide">NO MATCHING DATA FOUND</div>';
             } else {
-                dropdown.innerHTML = results.map(item => {
+                dropdown.innerHTML = results.map((item, index) => {
                     const isRank = 'rank_en' in item;
                     const name_en = isRank ? item.rank_en : item.corps_en;
                     const name_th = isRank ? item.rank_th : item.corps_th;
@@ -89,17 +153,17 @@
                     const branch = branchMap[item.branch_en] || item.branch_en;
                     
                     return `
-                        <div class="px-4 py-3 hover:bg-[#f4f5f0] cursor-pointer border-b border-stone-50 last:border-0 flex justify-between items-center group/item transition-colors">
+                        <div class="result-item px-6 py-4 hover:bg-[#4b5320]/10 cursor-pointer border-b border-stone-100 last:border-0 flex justify-between items-center group/item transition-all" style="animation-delay: ${index * 0.05}s">
                             <div class="min-w-0">
-                                <div class="text-sm font-semibold text-stone-900 group-hover/item:text-[#4b5320] transition-colors truncate">
-                                    ${name_th} <span class="text-stone-400 font-normal ml-1">(${name_en})</span>
+                                <div class="text-sm font-black text-[#2d3319] group-hover/item:text-[#4b5320] transition-colors truncate">
+                                    ${name_th} <span class="text-stone-400 font-bold ml-1 text-xs uppercase tracking-tight">${name_en}</span>
                                 </div>
-                                <div class="text-[10px] text-stone-400 uppercase tracking-wider flex items-center gap-1.5 mt-0.5 font-medium">
-                                    <span class="${isRank ? 'text-[#626d39]' : 'text-[#8b7355]'} font-bold">${isRank ? 'ชั้นยศ' : 'เหล่า/พรรค'}</span>
-                                    ${abbr ? '<span>•</span> ' + abbr : ''}
+                                <div class="text-[9px] text-stone-500 uppercase tracking-[0.15em] flex items-center gap-2 mt-1 font-black">
+                                    <span class="px-1.5 py-0.5 rounded ${isRank ? 'bg-[#626d39] text-white' : 'bg-[#8b7355] text-white'}">${isRank ? 'RANK' : 'CORPS'}</span>
+                                    ${abbr ? '<span>•</span> <span class="text-[#4b5320]">' + abbr + '</span>' : ''}
                                 </div>
                             </div>
-                            <span class="flex-shrink-0 text-[10px] font-bold px-2 py-0.5 rounded-md bg-stone-100 text-stone-600 uppercase tracking-tight ml-4">${branch}</span>
+                            <span class="flex-shrink-0 text-[10px] font-black px-3 py-1 rounded-lg bg-stone-100 text-[#2d3319] border border-stone-200 uppercase tracking-tighter ml-4">${branch}</span>
                         </div>
                     `;
                 }).join('');
@@ -129,7 +193,6 @@
             renderResults([...filteredRanks, ...filteredCorps].slice(0, 10));
         });
 
-        // Hide dropdown when clicking outside
         document.addEventListener('click', (e) => {
             if (!input.contains(e.target) && !dropdown.contains(e.target)) {
                 dropdown.classList.add('hidden');
